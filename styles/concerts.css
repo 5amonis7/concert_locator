@@ -1,4 +1,4 @@
-#concerts{
+#concerts {
     width: 100%;
     position: relative;
     /* background: linear-gradient(to top left, #414141, #1a1a1a); */
@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.container{
+.container {
     background: linear-gradient(to top left, #25c18f, #25bab5);
     width: 80%;
     height: 50rem;
@@ -21,7 +21,7 @@
 }
 
 .container::before,
-.container::after{
+.container::after {
     content: "";
     position: absolute;
     width: 200px;
@@ -30,43 +30,43 @@
     transition: all .5s;
 }
 
-.container::before{
+.container::before {
     top: -15px;
     left: -15px;
     border-width: 3px 0 0 3px;
 }
 
-.container::after{
+.container::after {
     bottom: -15px;
     right: -15px;
     border-width: 0 3px 3px 0;
 }
 
 .container:hover::before,
-.container:hover::after{
+.container:hover::after {
     width: calc(100% + 27px);
-    height: calc(100% + 27px)
+    height: calc(100% + 27px);
 }
 
-.container h1{
+.container h1 {
     text-align: center;
     font-size: 3rem;
     margin: 1.5rem;
 }
 
-#concerts-table{
+#concerts-table {
     width: 100%;
-    border-collapse:collapse;
+    border-collapse: collapse;
     margin-bottom: 1rem;
 }
 
-#concert-info{
+#concert-info {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
 }
 
-tr{
+tr {
     border-bottom: 1px solid white;
     height: 4rem;
     text-align: left;
@@ -74,10 +74,12 @@ tr{
     z-index: 1;
     cursor: default;
 }
-tr > th {
+
+tr>th {
     padding-left: 2rem;
 }
-tr::before{
+
+tr::before {
     content: "";
     height: 100%;
     width: 0;
@@ -90,9 +92,10 @@ tr::before{
     z-index: -1;
 }
 
-tr:hover:not(:first-child)::before{
+tr:hover:not(:first-child)::before {
     width: 100%;
 }
+
 /* tr:not(:first-child):hover{
     color: rgb(60, 150, 224);
 } */
